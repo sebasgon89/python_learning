@@ -1,5 +1,7 @@
 import requests
+from datetime import datetime
 
+# Excersise part
 GENDER = "Male"
 WEIGHT_KG = 75
 HEIGHT_CM = 175
@@ -27,4 +29,41 @@ parameters = {
 
 response = requests.post(exercise_endpoint, json=parameters, headers=headers)
 result = response.json()
+
+
 print(result)
+
+# Sheety part - GET
+url = 'https://api.sheety.co/c838cbaa1e0a35f100b6441cefcf78c2/myWorkouts/workouts'
+url_filter = 'https://api.sheety.co/c838cbaa1e0a35f100b6441cefcf78c2/myWorkouts/workouts?filter[duration]=22'
+print(requests.get(url=url).json())
+print(requests.get(url=url_filter).json())
+
+# Sheety part - POST
+workout : {
+    'date': '2023-03-03',
+    'time': '16:00',
+}
+
+url_post = 'https://api.sheety.co/c838cbaa1e0a35f100b6441cefcf78c2/myWorkouts/workouts'
+requests.post(url_post)
+#Esto no hizo nada
+
+# la de Angela
+today_date = datetime.now().strftime("%d/%m/%Y")
+now_time = datetime.now().strftime("%X")
+
+for exercise in result["exercises"]:
+    sheet_inputs = {
+        "workout": {
+            "date": today_date,
+            "time": now_time,
+            "exercise": exercise["name"].title(),
+            "duration": exercise["duration_min"],
+            "calories": exercise["nf_calories"]
+        }
+    }
+
+    sheet_response = requests.post(url, json=sheet_inputs)
+    print(sheet_inputs)
+    print(sheet_response.text)
