@@ -30,7 +30,6 @@ parameters = {
 response = requests.post(exercise_endpoint, json=parameters, headers=headers)
 result = response.json()
 
-
 print(result)
 
 # Sheety part - GET
@@ -40,14 +39,14 @@ print(requests.get(url=url).json())
 print(requests.get(url=url_filter).json())
 
 # Sheety part - POST
-workout : {
+workout: {
     'date': '2023-03-03',
     'time': '16:00',
 }
 
 url_post = 'https://api.sheety.co/c838cbaa1e0a35f100b6441cefcf78c2/myWorkouts/workouts'
-requests.post(url_post)
-#Esto no hizo nada
+# requests.post(url_post)
+# Esto no hizo nada
 
 # la de Angela
 today_date = datetime.now().strftime("%d/%m/%Y")
@@ -64,6 +63,25 @@ for exercise in result["exercises"]:
         }
     }
 
-    sheet_response = requests.post(url, json=sheet_inputs)
-    print(sheet_inputs)
-    print(sheet_response.text)
+# Basic Authentication
+
+YOUR_USERNAME = "sheetyseba"
+YOUR_PASSWORD = "wbIS9tlv"
+
+sheet_response = requests.post(
+    url=url,
+    json=sheet_inputs,
+    auth=(
+        YOUR_USERNAME,
+        YOUR_PASSWORD,
+    ),
+    headers="Authorization: Basic c2hlZXR5c2ViYTp3YklTOXRsdg=="
+)
+
+# sheet_response = requests.post(url, json=sheet_inputs)
+# print(sheet_inputs)
+# print(sheet_response.text)
+
+# sheet_response = requests.post(exercise_endpoint, json=sheet_inputs)
+#
+# print(sheet_response.text)
