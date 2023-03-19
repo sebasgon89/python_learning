@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e704d067-ce72-41f5-8d23-2153c4725a62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../day56_web_rendering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day56_web_rendering/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e704d067-ce72-41f5-8d23-2153c4725a62" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +35,8 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Seba/Projects/Python/PyCharm/Starting+Files+-+movie-project-start"
   }
 }]]></component>
   <component name="RecentsManager">
