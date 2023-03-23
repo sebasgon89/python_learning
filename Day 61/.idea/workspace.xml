@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad50364d-6e4f-437a-8708-5d0859ae305e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/DAY 60 - HTML forms with POST.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DAY 60 - HTML forms with POST/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day61/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Starting+Files+-+blog-with-users-start/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Starting+Files+-+blog-with-users-start/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ad50364d-6e4f-437a-8708-5d0859ae305e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +25,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Seba/Projects/Python/PyCharm/Day 61",
+    "last_opened_file_path": "C:/Seba/Projects/Python/PyCharm/Day 63 - Library",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
